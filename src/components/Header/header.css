@@ -1,0 +1,93 @@
+header{
+    width: 100%;
+    height: 85px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #0000000c;
+    position: fixed;
+    z-index: 2222222;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo > p{
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.list-menu{
+    width: 100%;
+    height: 0vh;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    display: block;
+    opacity:0;
+    visibility: hidden;
+    border-bottom: 1px solid #0000003b;
+    transition: 0.4s;
+}
+
+.list-menu.active{
+    opacity:1;
+    visibility: visible;
+    height: 30vh;
+}
+
+.list-menu li a{
+    font-size: 1.1rem;
+    color: #000;
+    margin: .50rem;
+    transition: .4s;
+}
+
+.list-menu li a:hover{
+    color: var(--color-primary);
+}
+
+
+.toggle{
+   font-size: 2rem;
+   position: absolute;
+   top: 1.7rem;
+   right: 1rem;
+   cursor: pointer;
+   color: #000;
+}
+
+
+.btn-toggle{
+    padding: .90rem;
+    background-color: var(--color-primary);
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+@media (min-width:1042px){
+    .toggle{
+        display: none;
+    }
+
+
+    .list-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 0vh;
+        opacity: 1;
+        visibility: visible;
+        top: 52%;
+        gap: 2rem;
+        border-bottom: none;
+    }
+}

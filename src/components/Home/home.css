@@ -1,0 +1,25 @@
+.home{
+    padding: 120px 12px;
+    max-width: 1600px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    place-items: center;
+}
+
+.home-text h1{
+    font-size: 2.66rem;
+    margin-bottom: var(--mg-bottom);
+}
+
+.home-text p{
+    margin-bottom: var(--mg-bottom);
+}
+
+@media (min-width:1042px){
+    .home{
+        grid-template-columns: 1fr 1fr;
+    }
+}

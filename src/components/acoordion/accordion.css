@@ -1,0 +1,39 @@
+.accordion{
+    max-width: 1700px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
+    margin-bottom: var(--mg-bottom);
+}
+
+.title-accordion{
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 0.90rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.content-accordion{
+    padding: 2rem;
+    animation: animationLeft .4s ease-in-out;
+    text-align: left !important;
+}
+
+
+
+@keyframes animationLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
